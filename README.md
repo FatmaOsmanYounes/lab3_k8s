@@ -109,7 +109,7 @@ Open browser:
 http://localhost:8082
 ```
 
-![Dev Application](screenshots/dev_app.png)
+![Dev Application](screenshots/App1.png)
 
 ---
 
@@ -125,7 +125,7 @@ Open browser:
 http://localhost:8083
 ```
 
-![Staging Application](screenshots/staging_app.png)
+![Staging Application](screenshots/App2.png)
 
 ---
 
