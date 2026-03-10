@@ -107,7 +107,7 @@ Open browser:
 http://localhost:8082
 ```
 
-![Dev Application](screenshots/App1.png)
+![Dev Application](screenshots/App2.png)
 
 ---
 
