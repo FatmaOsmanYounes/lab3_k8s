@@ -81,7 +81,7 @@ kubectl apply -f staging-environment.yaml
 kubectl get pods,svc -n dev
 ```
 
-![Dev Pods](screenshots/pods_dev.png)
+![Dev Pods](screenshots/dev_app.png)
 
 ---
 
