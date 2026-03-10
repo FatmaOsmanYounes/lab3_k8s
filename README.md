@@ -10,7 +10,7 @@ In this lab, a single Kubernetes cluster is used to deploy two separate environm
 
 Each environment contains a **frontend** and **backend** application. The environments are logically separated using **Kubernetes namespaces**.
 
-The backend runs a simple Python HTTP server, while the frontend uses **Nginx** to communicate with the backend using the backend service name inside the same namespace.
+The backend runs a simple Python HTTP server that exposes basic endpoints, while the frontend uses **Nginx** to communicate with the backend using the backend service name inside the same namespace.
 
 ---
 
@@ -27,10 +27,12 @@ lab3-k8s/
 ├── dev-environment.yaml
 ├── staging-environment.yaml
 ├── README.md
+│
 └── screenshots/
     ├── pods_dev.png
     ├── pods_staging.png
-    └── app1.png
+    ├── dev_app.png
+    └── staging_app.png
 ```
 
 ---
@@ -107,7 +109,7 @@ Open browser:
 http://localhost:8082
 ```
 
-![Dev Application](screenshots/App2.png)
+![Dev Application](screenshots/dev_app.png)
 
 ---
 
@@ -123,7 +125,7 @@ Open browser:
 http://localhost:8083
 ```
 
-![Staging Application](screenshots/App1.png)
+![Staging Application](screenshots/staging_app.png)
 
 ---
 
@@ -136,6 +138,6 @@ http://localhost:8083
 
 - The frontend communicates with the backend using **backend-service** inside the same namespace.
 
-- Kubernetes **Namespaces** are used to isolate the dev and staging environments within the same cluster.
+- Kubernetes **Namespaces** are used to isolate the **dev** and **staging** environments within the same cluster.
 
 - Pod names and namespaces are displayed on the frontend for easier identification.
